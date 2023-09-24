@@ -121,5 +121,9 @@ button{ /* button format */
     text-decoration: underline;
 }
 
-
+@media(max-width: 980px){
+    .form-box{
+        scale: 200%;
+    }
+}
 

@@ -16,8 +16,8 @@ section{    /*Content location*/
 }
 .form-box{      /*Form box size*/
     position: relative;
-    width: 400px;
-    height: 450px;
+    width:  100%;
+    height: 2000px;
     background: transparent;
     backdrop-filter: blur(2px);
     border: 2px solid rgba(255, 255, 255, 1);
@@ -118,6 +118,28 @@ button{ /* button format */
 
 .register p a:hover{/*register format when hovering cursor over it*/
     text-decoration: underline;
+}
+
+@media(min-width: 400px){
+    .form-box{
+        max-width: 400px;
+        max-height: 450px;
+    }
+}
+
+@media(min-width: 700px){
+    .form-box{
+        max-width: 700px;
+        max-height: 787px;
+    }
+}
+
+
+@media(min-width: 900px){
+    .form-box{
+        max-width: 900px;
+        max-height: 1012px;
+    }
 }
 
 

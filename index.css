@@ -43,7 +43,7 @@ h2{     /*title format*/
 .inputbox label{    /*Input box labels "Email", "Password" format*/
     position: absolute;
     top: 50%;
-    left: 0%;
+    left: 3%;
     transform: translateY(-40%);
     color: #fff;
     font-size: 1em;

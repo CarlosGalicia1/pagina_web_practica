@@ -16,8 +16,6 @@ section{    /*Content location*/
 }
 .form-box{      /*Form box size*/
     position: relative;
-    width:  400px;
-    height: 450px;
     background: transparent;
     backdrop-filter: blur(2px);
     border: 2px solid rgba(255, 255, 255, 1);
@@ -26,32 +24,37 @@ section{    /*Content location*/
     justify-content: center;
     align-items: center;
 }
+
+.form_value{
+    margin: 20px 50px;
+}
+
 h2{     /*title format*/
-    font-size: 2em;
+    font-size: 3em;
     color: #fff;
     text-align: center;
 }
 .inputbox{      /*Input box white bottom line*/
     position: relative;
-    margin: 30px 0;
-    width: 310px;
+    margin: 40px 0;
+    width: 100%;
     border-bottom: 2px solid #fff;
 }
 .inputbox label{    /*Input box labels "Email", "Password" format*/
     position: absolute;
     top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
+    left: 0%;
+    transform: translateY(-40%);
     color: #fff;
     font-size: 1em;
-    pointer-events: none;
     transition: .5s;
 }
 
-input:focus ~ label,
+input:focus ~ label,input:focus ~ ion-icon, input:valid ~ ion-icon
 input:valid ~ label{ /* label px movement when input space focused*/
-    top: -5px;
+    top: -10%;
 }
+
 .inputbox input{    /*Input box input space format */
     width: 100%;
     height: 50px;
@@ -65,22 +68,20 @@ input:valid ~ label{ /* label px movement when input space focused*/
 
 .inputbox ion-icon{     /* icons format*/
     position: absolute;
-    right: 8px;
+    top: 40%;
+    right: 3%;
     color: #fff;
     font-size: 1.2em;
-    top: 20px;
+    transition: .5s;
+
 }
 
-.forget{    /* forget div format*/
-    margin: -15px 0 15px;
+.forget{    /* "forgot password?" div format*/
+    margin: 0 0 15px;
     font-size: .9em;
     color: #fff;
     display: flex;
     justify-content: center;
-}
-
-.forget label input{    /*forget input checkbox "remember me" format*/
-    margin-right: 3px;
 }
 
 .forget label a{    /*label "forgot password" format*/
@@ -108,7 +109,7 @@ button{ /* button format */
     font-size: .9em;
     color: #fff;
     text-align: center;
-    margin: 25px 0 10px;
+    margin: 10px;
 }
 .register p a{ /*register format*/
     text-decoration: none;
@@ -120,23 +121,5 @@ button{ /* button format */
     text-decoration: underline;
 }
 
-@media(max-width: 1000px){
-    .form-box{
-        scale: 120%;
-    }
-}
-
-@media(max-width: 750px){
-    .form-box{
-        scale: 150%;
-    }
-}
-
-
-@media(max-width: 400px){
-    .form-box{
-        scale: 175%;
-    }
-}
 
 
